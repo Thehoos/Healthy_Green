@@ -48,7 +48,7 @@ int Calculate_Moist_Value( int Check_times, int delay_time ){
     Value += analogRead(Moisture_Sensor);
     delay(delay_time);
   }
-  Value /= 20;
+  Value /= Check_times;
   
   return Value;
 }
