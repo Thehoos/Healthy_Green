@@ -21,7 +21,7 @@ const int Moisture_Sensor = A0;
 const int Good_Value = 437;
 
 const int Dry_Value = 484;
-const int Just_watered = 387;
+const int Just_watered = 360;
 
 const int Air_Value = 670;                              
 const int Water_Value = 350;
