@@ -21,7 +21,7 @@ const int Moisture_Sensor = A0;
 const int Good_Value = 437;
 
 const int Dry_Value = 484;
-const int Just_watered = 360;
+const int Just_watered = 350;
 
 const int Air_Value = 670;                              
 const int Water_Value = 350;
@@ -35,7 +35,7 @@ int Moisture_Value, Prev_Moisture_Value;
 int Calculate_Moisture(  int Value ) {
 
   int Percentage;
-  Percentage = map(Value, Dry_Value, Just_watered, 0, 100);
+  Percentage = map(Value, Air_Value, Water_Value, 0, 100);
   
   //Moisture_Percentage -= 10; // cause of the power shortage from supplying lcd display
   return Percentage;
